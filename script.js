@@ -91,3 +91,21 @@ document.querySelectorAll('.skill-level').forEach(level => {
     level.style.width = '0';
     level.parentElement.setAttribute('data-level', width);
 });
+
+// Navbar hide/show on scroll
+let lastScrollTop = 0;
+let isScrolling;
+const navbar = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+    // Add hidden class while scrolling
+    navbar.classList.add('nav-hidden');
+    
+    // Clear the timeout throughout the scroll
+    clearTimeout(isScrolling);
+    
+    // Set a timeout to show the navbar after scrolling stops
+    isScrolling = setTimeout(() => {
+        navbar.classList.remove('nav-hidden');
+    }, 150); // Adjust this value to control how quickly the navbar appears after stopping scroll
+});

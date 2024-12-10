@@ -1,4 +1,14 @@
-/* Base styles */
+nav {
+    /* ... existing styles ... */
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+.nav-hidden {
+    opacity: 0;
+    transform: translate(-50%, -1rem);
+    pointer-events: none;
+}/* Base styles */
 :root {
     /* Dark theme variables */
     --primary-color: #4a90e2;
@@ -8,6 +18,8 @@
     --text-secondary: #8892b0;
     --card-background: #112240;
     --nav-background: rgba(10, 25, 47, 0.85);
+    --skills-background: #0a192f;
+    --skills-text: #ccd6f6;
 }
 
 /* Light theme variables */
@@ -15,8 +27,10 @@
     --background-dark: #ffffff;
     --text-primary: #2d3748;
     --text-secondary: #4a5568;
-    --card-background: #f7fafc;
+    --card-background: #e2e8f0;
     --nav-background: rgba(255, 255, 255, 0.85);
+    --skills-background: #f8fafc;
+    --skills-text: #2d3748;
 }
 
 * {
@@ -381,66 +395,52 @@ nav a:hover::after {
 }
 #skills {
     padding: 4rem 2rem;
-    background: #0a192f;
+    background: var(--skills-background);
 }
 
 #skills h2 {
     text-align: center;
-    color: #ccd6f6;
+    color: var(--skills-text);
     margin-bottom: 3rem;
 }
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .tech-card {
-    background: #112240;
-    border-radius: 12px;
-    padding: 1.5rem;
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 10px;
     text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .tech-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    background: #172a45;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tech-card img {
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
     margin-bottom: 1rem;
-    filter: grayscale(20%);
-    transition: filter 0.3s ease;
-}
-
-.tech-card:hover img {
-    filter: grayscale(0%);
 }
 
 .tech-card h3 {
-    color: #e6f1ff;
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
 }
 
 .tech-card p {
-    color: #8892b0;
+    color: var(--text-secondary);
     font-size: 0.9rem;
-    margin: 0;
-    line-height: 1.4;
 }
 
 /* Responsive adjustments */
