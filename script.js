@@ -109,3 +109,19 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('nav-hidden');
     }, 150); // Adjust this value to control how quickly the navbar appears after stopping scroll
 });
+
+// CV Download functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const cvDownloadButton = document.getElementById('cv-download-btn');
+    if (cvDownloadButton) {
+        cvDownloadButton.addEventListener('click', () => {
+            const cvPath = 'Ramachandraa_PS_CV.pdf';
+            const link = document.createElement('a');
+            link.href = cvPath;
+            link.view = 'Ramachandraa_PS_CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
+});
