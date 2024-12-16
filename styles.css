@@ -660,3 +660,115 @@ h2 {
     margin-bottom: 3rem;
     color: var(--primary-color);
 }
+
+/* Experience Section Styles */
+#experience {
+    background-color: var(--background-dark);
+    padding: 4rem 2rem;
+}
+
+#experience h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.experience-timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-card {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+    margin-bottom: 1.5rem;
+}
+
+.experience-header h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-header .role {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.experience-header .duration {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.experience-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-details ul li {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-details ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.experience-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.experience-tags span {
+    background-color: rgba(74, 144, 226, 0.1);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments for Experience Section */
+@media (max-width: 768px) {
+    #experience {
+        padding: 3rem 1rem;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    .experience-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .experience-header .role {
+        font-size: 0.9rem;
+    }
+
+    .experience-details ul li {
+        font-size: 0.9rem;
+    }
+}
