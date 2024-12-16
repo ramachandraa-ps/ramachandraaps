@@ -398,12 +398,6 @@ nav a:hover::after {
     background: var(--skills-background);
 }
 
-#skills h2 {
-    text-align: center;
-    color: var(--skills-text);
-    margin-bottom: 3rem;
-}
-
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
