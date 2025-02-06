@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="floating-icons">
+        <i class="fab fa-react tech-icon large" style="top: 15%; left: 10%"></i>
+        <i class="fab fa-python tech-icon large" style="top: 75%; left: 85%"></i>
+        <i class="fab fa-java tech-icon large" style="top: 45%; left: 20%"></i>
+        <i class="fab fa-js tech-icon medium" style="top: 30%; left: 80%"></i>
+        <i class="fab fa-html5 tech-icon medium" style="top: 85%; left: 40%"></i>
+        <i class="fab fa-css3-alt tech-icon medium" style="top: 25%; left: 50%"></i>
+        <i class="fab fa-github tech-icon medium" style="top: 60%; left: 90%"></i>
+        <i class="fab fa-node-js tech-icon medium" style="top: 15%; left: 30%"></i>
+        <i class="fab fa-npm tech-icon small" style="top: 40%; left: 15%"></i>
+        <i class="fab fa-git-alt tech-icon small" style="top: 70%; left: 25%"></i>
+        <i class="fab fa-docker tech-icon small" style="top: 20%; left: 70%"></i>
+        <i class="fab fa-android tech-icon small" style="top: 55%; left: 85%"></i>
+        <i class="fab fa-aws tech-icon small" style="top: 90%; left: 60%"></i>
+        <i class="fab fa-bootstrap tech-icon small" style="top: 10%; left: 40%"></i>
+        <i class="fas fa-database tech-icon small" style="top: 80%; left: 15%"></i>
+        <i class="fab fa-sass tech-icon small" style="top: 35%; left: 95%"></i>
+    </div>
     <nav>
         <div class="nav-content">
             <ul>
@@ -19,9 +37,6 @@
             </ul>
             <button id="theme-toggle">
                 <i class="fas fa-moon"></i>
-            </button>
-        </div>
-    </nav>
             </button>
         </div>
     </nav>
@@ -93,46 +108,49 @@
                 <div class="project-image">
                     <i class="fas fa-satellite"></i>
                 </div>
-                <h3>Cosmic Watch</h3>
-                <p>An interactive platform aggregating real-time NASA space data with educational content and engaging visualizations, making space exploration accessible and exciting.</p>
+                <h3>COSMOS</h3>
+                <div class="project-description">
+                    <ul>
+                        <li>Developed an interactive platform for real-time space monitoring and educational platform</li>
+                        <li>Implemented features to bridge the gap between students and space education, aligning with UN's Sustainable Development Goal 4 (Quality Education)</li>
+                        <li>Led development and successfully completed the project under strict 24-hour time constraints, securing first place in the hackathon</li>
+                        <li>Integrated a VR-based metahuman module to serve as an interactive space guide, enhancing user engagement and learning experience</li>
+                    </ul>
+                </div>
                 <div class="project-tags">
                     <span>React</span>
                     <span>TypeScript</span>
                     <span>Tailwind CSS</span>
+                    <span>VR</span>
+                    <span>Metahuman</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/ramachandraa-ps/cosmic-watch" class="project-link"><i class="fab fa-github"></i> Code</a>
-                    <a href="https://cosmic-watch.netlify.app/" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    <a href="https://github.com/ramachandraa-ps/cosmos" target="_blank"><i class="fab fa-github"></i>Code</a>
+                    <a href="https://cosmos-watch.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i>Live Demo</a>
                 </div>
             </div>
-            <!-- <div class="project-card">
-                <div class="project-image">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3>Project 2</h3>
-                <p>Mobile-responsive application built with modern JavaScript stack.</p>
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>Node.js</span>
-                </div>
-                <div class="project-links">
-                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
-                </div>
-            </div> -->
             <div class="project-card">
                 <div class="project-image">
                     <i class="fas fa-university"></i>
                 </div>
-                <h3>Vault X - Banking Application</h3>
-                <p>Secure banking system with core features like deposits, withdrawals, and transfers. Features user authentication and intuitive interface.</p>
+                <h3>VAULT X</h3>
+                <div class="project-description">
+                    <ul>
+                        <li>Developed a secure and user-friendly banking application with modern UI/UX principles</li>
+                        <li>Implemented core banking features including account management, transactions, and balance tracking</li>
+                        <li>Integrated robust security measures to protect sensitive financial data</li>
+                        <li>Created an intuitive dashboard for easy monitoring of financial activities</li>
+                        <li>Built with Java and modern Android development practices</li>
+                    </ul>
+                </div>
                 <div class="project-tags">
                     <span>Java</span>
-                    <span>Authentication</span>
+                    <span>Android</span>
+                    <span>SQLite</span>
                     <span>UI/UX</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/ramachandraa-ps/BankingApp" class="project-link"><i class="fab fa-github"></i> Code</a>
+                    <a href="https://github.com/ramachandraa-ps/BankingApp" target="_blank"><i class="fab fa-github"></i>Code</a>
                 </div>
             </div>
         </div>
@@ -141,62 +159,45 @@
        <section id="skills">
         <h2>Technologies & Tools</h2>
         <div class="tech-grid">
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                <h3>Python</h3>
-                <p>Backend & Data</p>
-            </div>
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                <h3>Java</h3>
-                <p>Enterprise Programming</p>
-            </div>
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
-                <h3>TypeScript</h3>
-                <p>JavaScript but better</p>
-            </div>
-            
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
-                <h3>Dart</h3>
-                <p>Programming Language</p>
-            </div>
-            
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                <h3>Node.js</h3>
-                <p>Runtime Environment</p>
-            </div>
-            
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+            <div class="skill-item">
+                <i class="fab fa-react skill-icon"></i>
                 <h3>React</h3>
-                <p>UI Development</p>
             </div>
-            
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
-                <h3>Flutter</h3>
-                <p>Cross-platform Development</p>
+            <div class="skill-item">
+                <i class="fab fa-js skill-icon"></i>
+                <h3>JavaScript</h3>
             </div>
-            
-            <div class="tech-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind">
-                <h3>Tailwind</h3>
-                <p>Utility-first CSS</p>
+            <div class="skill-item">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Python</h3>
             </div>
-            
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+            <div class="skill-item">
+                <i class="fab fa-java skill-icon"></i>
+                <h3>Java</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node-js skill-icon"></i>
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-git-alt skill-icon"></i>
                 <h3>Git</h3>
-                <p>Version Control</p>
             </div>
-                   
-            <div class="tech-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
-                <h3>Figma</h3>
-                <p>Design Tool</p>
+            <div class="skill-item">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>SQL</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-android skill-icon"></i>
+                <h3>Android</h3>
             </div>
         </div>
     </section>
